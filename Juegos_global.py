@@ -1,12 +1,14 @@
 import os
 import time
 import random
-from IPython.display import clear_output
 import msvcrt
 
 
 #Funciones de la Sopa de letras
-
+#funcion que llimpia pantalla
+def clear_output(wait=False):
+    os.system('cls')
+    
 #Funcion que crea una matriz de ceros del tamaño que pida el usuario
 def inicializar_matriz (tamaño):
     for i in range(tamaño):
